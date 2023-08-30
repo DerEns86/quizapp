@@ -1,0 +1,1 @@
+console.log(questions[1].right_answer);
