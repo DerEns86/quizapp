@@ -1,3 +1,40 @@
+body {
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: var(--bs-secondary-bg-subtle) !important;
+}
+
 .bg {
     background-color: var(--bs-primary-text-emphasis);
+}
+
+.mainCard {
+   max-width: 80vw;
+   width: 30rem;
+   padding-top: 20px;
+   padding-bottom: 20px;
+}
+
+.cardFooter {
+    border-top: 2px solid rgba(0, 0, 0, 0.3);
+    padding-top: 4px;
+}
+
+.quizAnswerCard:hover {
+    cursor: pointer;
+    background-color: rgba(0,0,0,0.05);
+}
+
+.card {
+
+}
+
+.bg-success {
+    color: white !important;
+}
+
+.bg-danger {
+    color: white !important;
 }
