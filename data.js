@@ -9,10 +9,10 @@ let questions = [
     },
     {
         "question": "Welches Element wird verwendet, um eine Überschrift in HTML darzustellen?",
-        "answer_1": "<header>",
-        "answer_2": "<h1>",
-        "answer_3": "<headline>",
-        "answer_4": "<title>",
+        "answer_1": "&lt;header&gt;",
+        "answer_2": "&lt;h1&gt;",
+        "answer_3": "&lt;headline&gt;",
+        "answer_4": "&lt;title&gt;",
         "right_answer": 2
     },
     {
@@ -32,7 +32,7 @@ let questions = [
         "right_answer": 2
     },
     {
-        "question": "Wie wählt man in CSS alle <div>-Elemente aus?",
+        "question": "Wie wählt man in CSS alle &lt;div&gt;-Elemente aus?",
         "answer_1": "div {}",
         "answer_2": "#div {}",
         "answer_3": ".div {}",
