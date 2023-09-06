@@ -26,38 +26,61 @@
           <img src="./img/logo.png" class="img-fluid rounded-start">
         </div>
         <div class="col-md-8">
-          <div class="card-body">
+          <!-- Endscreen -->
+          <div class="endscreenContainer d-none" id="endscreenContainer"> <!--d-none einfügen-->
+            <div class="d-flex flex-column align-items-center">
+              <img class="endscreenImg" src="./img/brain result.png" class="">
+              <span><b>Quiz beendet</b></span>
+              <span>YOUR SCORE <b id="amountOfRightQuestions"></b> / <b id="amountOfQuestions"></b></span>
+              <div><button class="btn btn-primary" onclick="restartGame()">Nochmal spielen</button></div>
+            </div>
+            <img class="img imgTrophy" src="./img/tropy.png" alt="">
+          </div>
+          <!-- main Quiz Card -->
+          <div class="card-body" id="contentContainer"> <!--d-none enfernen-->
+
             <h5 class="card-title" id="questionText"></h5>
 
             <div class="card mb-2 quizAnswerCard" id="answer_1" onclick="answer('answer_1')">
               <div class="card-body">
-                
+
               </div>
             </div>
 
 
             <div class="card mb-2 quizAnswerCard" id="answer_2" onclick="answer('answer_2')">
               <div class="card-body">
-                
+
               </div>
             </div>
 
             <div class="card mb-2 quizAnswerCard" id="answer_3" onclick="answer('answer_3')">
               <div class="card-body">
-                
+
               </div>
             </div>
 
             <div class="card mb-2 quizAnswerCard" id="answer_4" onclick="answer('answer_4')">
               <div class="card-body">
-                
+
               </div>
             </div>
 
-            <div class="cardFooter d-flex justify-content-between">
-              <span>Frage <b id="numberCurrentQuestion"></b> von <b id="numberAllQuestions"></b></span>
-              <button onclick="nextQuestion()" class="btn btn-primary" disabled id="btnNextQuestion">Nächste Frage</button>
+            <!-- progressbar -->
+            <div class="progress">
+              <div class="progress-bar" id="progress-bar" role="progressbar" style="width: 0%;" >0%</div>
             </div>
+
+
+            <div class="cardFooter d-flex justify-content-between">
+
+              
+              <span>Frage <b id="numberCurrentQuestion"></b> von <b id="numberAllQuestions"></b></span>
+              <button onclick="nextQuestion()" class="btn btn-primary" disabled id="btnNextQuestion">Nächste
+                Frage</button>
+            </div>
+            
+            
           </div>
         </div>
       </div>
